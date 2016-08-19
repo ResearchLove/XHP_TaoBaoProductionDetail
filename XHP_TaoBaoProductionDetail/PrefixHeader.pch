@@ -9,6 +9,25 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+#pragma mark - Frame
+#define Screen_Height [UIScreen mainScreen].bounds.size.height
+#define Screen_Width [UIScreen mainScreen].bounds.size.width
+#define BottomHeight 44.0
+#define TopTabBarHeight 44.0
+#define NaviBarHeight 64.0
+#define StatusBarHeight  20
+
+
+
+#pragma mark - Color
+
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0] //十六进制颜色
+#define Color(r,g,b,al) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:al]
+
+#define     BORDER_WIDTH_1PX            ([[UIScreen mainScreen] scale] > 0.0 ? 1.0 / [[UIScreen mainScreen] scale] : 1.0)
+#define     DEFAULT_NAVBAR_COLOR             Color(20.0, 20.0, 20.0, 0.9)
+#define     DEFAULT_BACKGROUND_COLOR         Color(239.0, 239.0, 244.0, 1.0)
+
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 

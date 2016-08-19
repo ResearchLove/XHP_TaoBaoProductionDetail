@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FirstDetailsHeaderView.h"
+#import "FirstDetailsFooterView.h"
+
+
 
 @interface FirstDetailsViewController : UITableViewController
+
 
 @end

@@ -8,6 +8,7 @@
 
 #import "FirstDetailsViewController.h"
 
+
 @interface FirstDetailsViewController ()
 
 @end
@@ -16,6 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.view setBackgroundColor:[UIColor redColor]];
+    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, Screen_Width, Screen_Height - BottomHeight) style:UITableViewStyleGrouped];
+    [self.tableView registerClass:[FirstDetailsHeaderView class] forHeaderFooterViewReuseIdentifier:@"FirstDetailsHeaderView"];
+    [self.tableView registerClass:[FirstDetailsFooterView class] forHeaderFooterViewReuseIdentifier:@"FirstDetailsFooterView"];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -33,23 +38,23 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of rows
-    return 0;
+    return 20;
 }
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *cellIdnetifer = @"CellIdentifier";
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdnetifer];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdnetifer];
+    }
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.

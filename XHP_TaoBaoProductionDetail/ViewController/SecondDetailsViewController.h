@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface SecondDetailsViewController : UITableViewController
+
+-(void)didTobBarPageSelectIndex:(NSInteger)index;
+
 
 @end

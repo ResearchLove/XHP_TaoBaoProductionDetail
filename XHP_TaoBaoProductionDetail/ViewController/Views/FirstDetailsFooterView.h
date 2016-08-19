@@ -10,4 +10,8 @@
 
 @interface FirstDetailsFooterView : UITableViewHeaderFooterView
 
+@property (strong,nonatomic) UIView *lineOneView;
+@property (strong,nonatomic) UILabel *titleLabel;
+@property (strong,nonatomic) UIView *lineTwoView;
+
 @end

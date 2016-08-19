@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CycleScrollView.h"
 
-@interface FirstDetailsHeaderView : UITableViewHeaderFooterView
+@interface FirstDetailsHeaderView : UITableViewHeaderFooterView <CycleScrollViewDelegate>
+
+
+@property(strong,nonatomic) NSArray *networkImageNameAry;
+@property(strong,nonatomic) CycleScrollView *networkNotTitleScrollView;
+@property(nonatomic,strong)UILabel * banerIndictorLabel;
+@property(assign,nonatomic) NSInteger banerCurImg;
 
 @end

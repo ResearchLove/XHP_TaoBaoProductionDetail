@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor blueColor]];
+    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, Screen_Height, Screen_Width, Screen_Height - BottomHeight) style:UITableViewStyleGrouped];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -34,12 +35,12 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Incomplete implementation, return the number of sections
-    return 2;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of rows
-    return 6;
+    return 20;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -51,6 +52,12 @@
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdnetifer];
     }
     return cell;
+
+}
+
+-(void)didTobBarPageSelectIndex:(NSInteger)index
+{
+     NSLog(@"you click topBar tag %ld",(long)index);
 
 }
 

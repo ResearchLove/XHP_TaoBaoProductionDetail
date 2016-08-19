@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ProductionDetailsViewController.h"
 
 @interface RootViewController : UIViewController
+
+@property (strong,nonatomic) UIButton *detailsBtn;
+
+@property (strong,nonatomic) ProductionDetailsViewController *proDetVC;
 
 @end
