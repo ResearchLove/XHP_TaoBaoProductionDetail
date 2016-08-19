@@ -27,7 +27,7 @@
 		AA448DBE1D606DCC00755976 /* FirstDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA448DBD1D606DCC00755976 /* FirstDetailsViewController.m */; };
 		AA448DC11D606E3000755976 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA448DC01D606E3000755976 /* RootViewController.m */; };
 		AA6637BC1D6699EB0030722F /* ConfirmOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6637BB1D6699EB0030722F /* ConfirmOrderViewController.m */; };
-		AA6637BE1D66F4A80030722F /* 高仿淘宝产品详情页.gif in Resources */ = {isa = PBXBuildFile; fileRef = AA6637BD1D66F4A80030722F /* 高仿淘宝产品详情页.gif */; };
+		AA6637C01D66F6D10030722F /* taoBaoProductionDetail.gif in Resources */ = {isa = PBXBuildFile; fileRef = AA6637BF1D66F6D10030722F /* taoBaoProductionDetail.gif */; };
 		AAE893381D5DD0AD00E32C82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE893371D5DD0AD00E32C82 /* main.m */; };
 		AAE8933B1D5DD0AD00E32C82 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE8933A1D5DD0AD00E32C82 /* AppDelegate.m */; };
 		AAE893411D5DD0AD00E32C82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE8933F1D5DD0AD00E32C82 /* Main.storyboard */; };
@@ -89,7 +89,7 @@
 		AA448DC01D606E3000755976 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		AA6637BA1D6699EB0030722F /* ConfirmOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmOrderViewController.h; sourceTree = "<group>"; };
 		AA6637BB1D6699EB0030722F /* ConfirmOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmOrderViewController.m; sourceTree = "<group>"; };
-		AA6637BD1D66F4A80030722F /* 高仿淘宝产品详情页.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "高仿淘宝产品详情页.gif"; sourceTree = "<group>"; };
+		AA6637BF1D66F6D10030722F /* taoBaoProductionDetail.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = taoBaoProductionDetail.gif; sourceTree = "<group>"; };
 		AAE893331D5DD0AD00E32C82 /* XHP_TaoBaoProductionDetail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XHP_TaoBaoProductionDetail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE893371D5DD0AD00E32C82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AAE893391D5DD0AD00E32C82 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -152,7 +152,7 @@
 		AA0D1EE81D62C8300006859F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				AA6637BD1D66F4A80030722F /* 高仿淘宝产品详情页.gif */,
+				AA6637BF1D66F6D10030722F /* taoBaoProductionDetail.gif */,
 				AA0D1EEF1D62C86F0006859F /* Images.xcassets */,
 			);
 			path = Resources;
@@ -398,8 +398,8 @@
 			files = (
 				AAE893461D5DD0AD00E32C82 /* LaunchScreen.storyboard in Resources */,
 				AA0D1EF01D62C86F0006859F /* Images.xcassets in Resources */,
-				AA6637BE1D66F4A80030722F /* 高仿淘宝产品详情页.gif in Resources */,
 				AAE893431D5DD0AD00E32C82 /* Assets.xcassets in Resources */,
+				AA6637C01D66F6D10030722F /* taoBaoProductionDetail.gif in Resources */,
 				AAE893411D5DD0AD00E32C82 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
